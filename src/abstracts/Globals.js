@@ -19,7 +19,7 @@ const Globals = createGlobalStyle`
     --gap: 5rem; 
       
     /* shadows */
-    --mainShadow: 0.1rem 0.3rem 1rem rgba(0, 0, 0, .2);
+    --mainShadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, .2);
 
     /* transitions */
     --mainTransition: all 0.3s ease-in-out;
