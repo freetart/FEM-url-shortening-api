@@ -5,6 +5,8 @@ import bgPattern from "../assets/bg-shorten-desktop.svg";
 
 const Article = styled.article`
   transform: translateY(8rem);
+  position: relative;
+  z-index: 10;
 `;
 
 const Container = styled.div`

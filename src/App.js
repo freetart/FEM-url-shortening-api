@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import ShortenLink from "./components/ShortenLink";
 import Statistics from "./components/Statistics";
+import Cta from "./components/Cta";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <main>
         <ShortenLink />
         <Statistics />
+        <Cta />
       </main>
     </>
   );

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { headingStyles } from "../../abstracts/Mixins";
 
 export const MainHeading = styled.h1`
@@ -10,7 +10,18 @@ export const MainHeading = styled.h1`
 export const SectionHeading = styled.h2`
   ${headingStyles}
   font-size: 4rem;
-  color: var(--black);
+
+  ${({ dark }) =>
+    dark &&
+    css`
+      color: var(--black);
+    `}
+
+  ${({ light }) =>
+    light &&
+    css`
+      color: var(--white);
+    `}
 `;
 
 export const StatHeading = styled.h3`

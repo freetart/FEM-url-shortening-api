@@ -37,7 +37,7 @@ const Statistics = () => {
     <Section>
       <Container>
         <div className="section-title">
-          <SectionHeading>Advanced Statistics</SectionHeading>
+          <SectionHeading dark>Advanced Statistics</SectionHeading>
           <Paragraph section>
             Track how your links are performing across the web with our advanced
             statistics dashboard.
