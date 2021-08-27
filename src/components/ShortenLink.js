@@ -3,6 +3,10 @@ import { maxWidthLg } from "../abstracts/Mixins";
 import Button from "./styledElements/Buttons";
 import bgPattern from "../assets/bg-shorten-desktop.svg";
 
+const Article = styled.article`
+  transform: translateY(8rem);
+`;
+
 const Container = styled.div`
   ${maxWidthLg}
   display: flex;
@@ -31,7 +35,7 @@ const Container = styled.div`
 
 const ShortenLink = () => {
   return (
-    <article>
+    <Article>
       <Container>
         <input
           className="shorten-link-input"
@@ -42,7 +46,7 @@ const ShortenLink = () => {
           Shorten It!
         </Button>
       </Container>
-    </article>
+    </Article>
   );
 };
 

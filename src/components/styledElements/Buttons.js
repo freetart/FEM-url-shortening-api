@@ -9,6 +9,8 @@ const Button = styled.a`
   cursor: pointer;
   box-shadow: var(--mainShadow);
   transition: var(--mainTransition);
+  background-color: var(--teal);
+  color: var(--white);
 
   &:hover,
   &:focus {
@@ -19,8 +21,6 @@ const Button = styled.a`
     primarySm &&
     css`
       font-size: 1.6rem;
-      background-color: var(--teal);
-      color: var(--white);
       border-radius: var(--btnRadius);
     `}
 
@@ -28,8 +28,6 @@ const Button = styled.a`
     primaryLg &&
     css`
       font-size: 2rem;
-      background-color: var(--teal);
-      color: var(--white);
       border-radius: var(--btnRadius);
     `}
 
@@ -37,8 +35,6 @@ const Button = styled.a`
     secondary &&
     css`
       font-size: 2rem;
-      background-color: var(--teal);
-      color: var(--white);
       border-radius: var(--mainRadius);
     `}
 `;
