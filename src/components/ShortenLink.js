@@ -44,7 +44,7 @@ const ShortenLink = () => {
           type="text"
           placeholder="Shorten a link here..."
         />
-        <Button secondary className="shorten-link-btn">
+        <Button secondaryLg className="shorten-link-btn">
           Shorten It!
         </Button>
       </Container>

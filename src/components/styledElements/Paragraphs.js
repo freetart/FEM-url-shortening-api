@@ -12,6 +12,20 @@ const Paragraph = styled.p`
       font-size: 2.2rem;
     `}
 
+  ${({ result }) =>
+    result &&
+    css`
+      font-size: 2rem;
+      color: var(--darkPurple);
+    `}
+
+  ${({ resultLink }) =>
+    resultLink &&
+    css`
+      font-size: 2rem;
+      color: var(--teal);
+    `}
+
   ${({ section }) =>
     section &&
     css`

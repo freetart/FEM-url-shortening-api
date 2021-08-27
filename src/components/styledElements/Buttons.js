@@ -30,9 +30,16 @@ const Button = styled.a`
       font-size: 2rem;
       border-radius: var(--btnRadius);
     `}
+  
+  ${({ secondarySm }) =>
+    secondarySm &&
+    css`
+      font-size: 1.6rem;
+      border-radius: var(--mainRadius);
+    `}
 
-  ${({ secondary }) =>
-    secondary &&
+  ${({ secondaryLg }) =>
+    secondaryLg &&
     css`
       font-size: 2rem;
       border-radius: var(--mainRadius);

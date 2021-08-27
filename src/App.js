@@ -2,6 +2,7 @@ import Globals from "./abstracts/Globals";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import ShortenLink from "./components/ShortenLink";
+import Results from "./components/Results";
 import Statistics from "./components/Statistics";
 import Cta from "./components/Cta";
 import Footer from "./components/Footer";
@@ -15,6 +16,7 @@ const App = () => {
       <Hero />
       <main>
         <ShortenLink />
+        <Results />
         <Statistics />
         <Cta />
       </main>

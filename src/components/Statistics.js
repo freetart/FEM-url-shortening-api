@@ -2,8 +2,8 @@ import styled from "styled-components";
 import Statistic from "./Statistic";
 import {
   maxWidthLg,
-  sectionSpacingMd,
   sectionSpacingSm,
+  sectionSpacingMd,
 } from "../abstracts/Mixins";
 import { SectionHeading } from "./styledElements/Headings";
 import Paragraph from "./styledElements/Paragraphs";
