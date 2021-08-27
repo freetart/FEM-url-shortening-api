@@ -2,7 +2,14 @@ import statIconOne from "./assets/icon-brand-recognition.svg";
 import statIconTwo from "./assets/icon-detailed-records.svg";
 import statIconThree from "./assets/icon-fully-customizable.svg";
 
-const statData = [
+import {
+  FaFacebook,
+  FaTwitter,
+  FaPinterest,
+  FaInstagram,
+} from "react-icons/fa";
+
+export const statData = [
   {
     id: 1,
     icon: statIconOne,
@@ -26,4 +33,39 @@ const statData = [
   },
 ];
 
-export default statData;
+export const footerLinksData = [
+  {
+    id: 1,
+    title: "Features",
+    links: ["Link Shortening", "Branded Links", "Analytics"],
+  },
+  {
+    id: 2,
+    title: "Resources",
+    links: ["Blog", "Developers", "Support"],
+  },
+  {
+    id: 3,
+    title: "Company",
+    links: ["About", "Our Team", "Careers", "Contact"],
+  },
+];
+
+export const footerSocialData = [
+  {
+    id: 1,
+    icon: <FaFacebook />,
+  },
+  {
+    id: 2,
+    icon: <FaTwitter />,
+  },
+  {
+    id: 3,
+    icon: <FaPinterest />,
+  },
+  {
+    id: 4,
+    icon: <FaInstagram />,
+  },
+];

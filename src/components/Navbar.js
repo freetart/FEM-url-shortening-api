@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import logo from "../assets/logo.svg";
-import NavLink from "./styledElements/NavLink";
+import Link from "./styledElements/Link";
 import Button from "./styledElements/Buttons";
 import { maxWidthLg, sectionSpacingSm } from "../abstracts/Mixins";
 
@@ -28,18 +28,26 @@ const Navbar = () => {
           <img className="nav-logo" src={logo} alt="shortly logo" />
           <ul className="nav-list">
             <li>
-              <NavLink href="#!">Features</NavLink>
+              <Link href="#!" nav>
+                Features
+              </Link>
             </li>
             <li>
-              <NavLink href="#!">Pricing</NavLink>
+              <Link href="#!" nav>
+                Pricing
+              </Link>
             </li>
             <li>
-              <NavLink href="#!">Resources</NavLink>
+              <Link href="#!" nav>
+                Resources
+              </Link>
             </li>
           </ul>
         </div>
         <div className="nav-cta">
-          <NavLink href="#!">Login</NavLink>
+          <Link href="#!" nav>
+            Login
+          </Link>
           <Button href="#!" primarySm>
             Sign Up
           </Button>

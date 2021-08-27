@@ -29,3 +29,10 @@ export const StatHeading = styled.h3`
   font-size: 2.2rem;
   color: var(--black);
 `;
+
+export const FooterHeading = styled.h4`
+  ${headingStyles}
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: var(--white);
+`;

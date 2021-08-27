@@ -8,7 +8,7 @@ import {
 import { SectionHeading } from "./styledElements/Headings";
 import Paragraph from "./styledElements/Paragraphs";
 import Line from "./styledElements/Line";
-import statData from "../data";
+import { statData } from "../data";
 
 const Section = styled.section`
   background-color: var(--lightGray);

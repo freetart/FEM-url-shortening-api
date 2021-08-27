@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import ShortenLink from "./components/ShortenLink";
 import Statistics from "./components/Statistics";
 import Cta from "./components/Cta";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Statistics />
         <Cta />
       </main>
+      <Footer />
     </>
   );
 };
