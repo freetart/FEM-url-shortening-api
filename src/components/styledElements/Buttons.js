@@ -5,22 +5,41 @@ const Button = styled.a`
   ${headingStyles}
   border: 0;
   outline: 0;
-  border-radius: var(--btnRadius);
   padding: 1.5rem 2.5rem;
-  font-size: 1.6rem;
+  cursor: pointer;
   box-shadow: var(--mainShadow);
   transition: var(--mainTransition);
 
-  ${({ primary }) =>
-    primary &&
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  ${({ primarySm }) =>
+    primarySm &&
     css`
+      font-size: 1.6rem;
       background-color: var(--teal);
       color: var(--white);
+      border-radius: var(--btnRadius);
+    `}
 
-      &:hover,
-      &:focus {
-        opacity: 0.8;
-      }
+  ${({ primaryLg }) =>
+    primaryLg &&
+    css`
+      font-size: 2rem;
+      background-color: var(--teal);
+      color: var(--white);
+      border-radius: var(--btnRadius);
+    `}
+
+  ${({ secondary }) =>
+    secondary &&
+    css`
+      font-size: 2rem;
+      background-color: var(--teal);
+      color: var(--white);
+      border-radius: var(--mainRadius);
     `}
 `;
 

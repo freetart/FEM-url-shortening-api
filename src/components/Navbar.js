@@ -40,7 +40,7 @@ const Navbar = () => {
         </div>
         <div className="nav-cta">
           <NavLink href="#!">Login</NavLink>
-          <Button href="#!" primary>
+          <Button href="#!" primarySm>
             Sign Up
           </Button>
         </div>

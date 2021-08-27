@@ -24,7 +24,7 @@ const Hero = () => {
             Build your brand’s recognition and get detailed insights on how your
             links are performing.
           </Paragraph>
-          <Button primary>Get Started</Button>
+          <Button primaryLg>Get Started</Button>
         </div>
         <img
           src={heroImg}
