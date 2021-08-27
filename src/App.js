@@ -5,6 +5,7 @@ import ShortenLink from "./components/ShortenLink";
 import Statistics from "./components/Statistics";
 import Cta from "./components/Cta";
 import Footer from "./components/Footer";
+import Tag from "./components/Tag";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Cta />
       </main>
       <Footer />
+      <Tag />
     </>
   );
 };

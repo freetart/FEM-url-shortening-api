@@ -2,18 +2,17 @@ import styled from "styled-components";
 import logoLight from "../assets/logolight.svg";
 import Link from "./styledElements/Link";
 import { FooterHeading } from "./styledElements/Headings";
-import { maxWidthLg, sectionSpacingSm } from "../abstracts/Mixins";
-import { footerLinksData } from "../data";
-import { footerSocialData } from "../data";
+import { maxWidthLg, sectionSpacingMd } from "../abstracts/Mixins";
+import { footerLinksData, footerSocialData } from "../data";
 
 const FooterSection = styled.footer`
-  background-color: var(--black);
+  background-color: #000;
   color: var(--white);
 `;
 
 const Container = styled.div`
   ${maxWidthLg}
-  ${sectionSpacingSm}
+  ${sectionSpacingMd}
   display: grid;
   grid-template-columns: 2fr 3fr 1.5fr;
 
@@ -58,7 +57,7 @@ const Footer = () => {
             <div key={link.id} className="footer-link">
               <FooterHeading>{link.title}</FooterHeading>
               {link.links.map((item, idx) => (
-                <Link footer key={idx}>
+                <Link href="#!" footer key={idx}>
                   {item}
                 </Link>
               ))}
