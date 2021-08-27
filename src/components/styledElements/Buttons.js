@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import { headingStyles } from "../../abstracts/Mixins";
+import Responsive from "../../abstracts/Responsive";
 
 const Button = styled.a`
   ${headingStyles}
@@ -36,6 +37,11 @@ const Button = styled.a`
     css`
       font-size: 1.6rem;
       border-radius: var(--mainRadius);
+      text-align: center;
+
+      ${Responsive.md`
+        width: 100%;
+      `}
     `}
 
   ${({ secondaryLg }) =>
@@ -43,6 +49,10 @@ const Button = styled.a`
     css`
       font-size: 2rem;
       border-radius: var(--mainRadius);
+
+      ${Responsive.md`
+        width: 100%;
+      `}
     `}
 `;
 

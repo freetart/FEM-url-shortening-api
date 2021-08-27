@@ -4,6 +4,7 @@ import Link from "./styledElements/Link";
 import { FooterHeading } from "./styledElements/Headings";
 import { maxWidthLg, sectionSpacingMd } from "../abstracts/Mixins";
 import { footerLinksData, footerSocialData } from "../data";
+import Responsive from "../abstracts/Responsive";
 
 const FooterSection = styled.footer`
   background-color: #000;
@@ -15,14 +16,33 @@ const Container = styled.div`
   ${sectionSpacingMd}
   display: grid;
   grid-template-columns: 2fr 3fr 1.5fr;
+  gap: var(--gap);
+
+  ${Responsive.xl`
+    grid-template-columns: 1fr 3fr; 
+  `}
+
+  ${Responsive.md`
+    grid-template-columns: 1fr;
+    text-align: center;
+  `}
 
   .footer-logo {
     width: 15rem;
+
+    ${Responsive.md`
+      margin: 0 auto;
+    `}
   }
 
   .footer-links {
     display: flex;
     gap: 10rem;
+
+    ${Responsive.md`
+      flex-direction: column;
+      gap: var(--gap);
+    `}
   }
 
   .footer-link {
@@ -33,6 +53,10 @@ const Container = styled.div`
   .footer-socials {
     display: flex;
     gap: var(--gap);
+
+    ${Responsive.lg`
+      margin: 0 auto;
+    `}
   }
 
   .footer-social {

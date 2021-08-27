@@ -3,6 +3,7 @@ import logo from "../assets/logo.svg";
 import Link from "./styledElements/Link";
 import Button from "./styledElements/Buttons";
 import { maxWidthLg, sectionSpacingSm } from "../abstracts/Mixins";
+import Responsive from "../abstracts/Responsive";
 
 const Container = styled.div`
   ${maxWidthLg}
@@ -17,6 +18,13 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     gap: var(--gap);
+  }
+
+  .nav-list,
+  .nav-cta {
+    ${Responsive.md`
+      display: none;
+    `}
   }
 `;
 

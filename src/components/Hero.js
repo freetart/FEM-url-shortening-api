@@ -4,6 +4,7 @@ import { MainHeading } from "./styledElements/Headings";
 import Paragraph from "./styledElements/Paragraphs";
 import Button from "./styledElements/Buttons";
 import { sectionSpacingSm, maxWidthLg } from "../abstracts/Mixins";
+import Responsive from "../abstracts/Responsive";
 
 const Container = styled.div`
   ${sectionSpacingSm}
@@ -12,6 +13,17 @@ const Container = styled.div`
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: var(--gap);
+
+  ${Responsive.md`
+    grid-template-columns: 1fr;
+    text-align: center;
+  `}
+
+  .hero-img {
+    ${Responsive.md`
+      order: -1;
+    `}
+  }
 `;
 
 const Hero = () => {

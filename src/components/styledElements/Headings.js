@@ -1,15 +1,24 @@
 import styled, { css } from "styled-components";
 import { headingStyles } from "../../abstracts/Mixins";
+import Responsive from "../../abstracts/Responsive";
 
 export const MainHeading = styled.h1`
   ${headingStyles}
   font-size: 8rem;
   color: var(--black);
+
+  ${Responsive.md`
+    font-size: 4.2rem;
+  `}
 `;
 
 export const SectionHeading = styled.h2`
   ${headingStyles}
   font-size: 4rem;
+
+  ${Responsive.md`
+    font-size: 2.8rem;
+  `}
 
   ${({ dark }) =>
     dark &&

@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import { textStyles } from "../../abstracts/Mixins";
+import Responsive from "../../abstracts/Responsive";
 
 const Paragraph = styled.p`
   ${textStyles}
@@ -10,6 +11,10 @@ const Paragraph = styled.p`
     hero &&
     css`
       font-size: 2.2rem;
+
+      ${Responsive.md`
+        font-size: 1.8rem;
+      `}
     `}
 
   ${({ result }) =>
@@ -17,6 +22,10 @@ const Paragraph = styled.p`
     css`
       font-size: 2rem;
       color: var(--darkPurple);
+
+      ${Responsive.md`
+        font-size: 1.6rem;
+      `}
     `}
 
   ${({ resultLink }) =>
@@ -24,6 +33,10 @@ const Paragraph = styled.p`
     css`
       font-size: 2rem;
       color: var(--teal);
+
+      ${Responsive.md`
+        font-size: 1.6rem;
+      `}
     `}
 
   ${({ section }) =>
@@ -32,6 +45,14 @@ const Paragraph = styled.p`
       font-size: 1.8rem;
       width: 50%;
       margin: 0 auto;
+
+      ${Responsive.lg`
+        width: 100%;
+      `}
+
+      ${Responsive.md`
+        font-size: 1.6rem;
+      `}
     `}
 
   ${({ stat }) =>

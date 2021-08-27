@@ -9,6 +9,7 @@ import { SectionHeading } from "./styledElements/Headings";
 import Paragraph from "./styledElements/Paragraphs";
 import Line from "./styledElements/Line";
 import { statData } from "../data";
+import Responsive from "../abstracts/Responsive";
 
 const Section = styled.section`
   background-color: var(--lightGray);
@@ -29,6 +30,11 @@ const Container = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--gap);
+
+    ${Responsive.lg`
+      grid-template-columns: 1fr;
+      gap: 10rem;
+    `}
   }
 `;
 

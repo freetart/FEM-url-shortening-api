@@ -13,6 +13,7 @@ const Container = styled.div`
   ${maxWidthLg}
   ${flexCenter}
   flex-direction: column;
+  text-align: center;
   gap: 3rem;
 `;
 
