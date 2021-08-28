@@ -10,6 +10,7 @@ const Globals = createGlobalStyle`
     --darkGray: hsl(257, 7%, 63%);
     --lightGray: hsl(225, 33%, 95%);
     --teal: hsl(180, 66%, 49%);
+    --red: hsl(0, 87%, 67%);
 
     /* radius */
     --mainRadius: 1rem;
