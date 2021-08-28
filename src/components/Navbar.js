@@ -1,7 +1,9 @@
+import { useState } from "react";
 import styled from "styled-components";
 import logo from "../assets/logo.svg";
 import Link from "./styledElements/Link";
 import Button from "./styledElements/Buttons";
+import MobileMenuToggle from "./MobileMenuToggle";
 import { maxWidthLg, sectionSpacingSm } from "../abstracts/Mixins";
 import Responsive from "../abstracts/Responsive";
 
@@ -29,6 +31,8 @@ const Container = styled.div`
 `;
 
 const Navbar = () => {
+  const [isActive, setIsActive] = useState(false);
+
   return (
     <nav>
       <Container>
@@ -60,6 +64,7 @@ const Navbar = () => {
             Sign Up
           </Button>
         </div>
+        <MobileMenuToggle isActive={isActive} setIsActive={setIsActive} />
       </Container>
     </nav>
   );

@@ -27,6 +27,12 @@ const Line = styled.div`
     width: 90%;
     transform: rotate(90deg) scale(1.5);
   `}
+
+  ${Responsive.xxs`
+    left: 0%;
+    width: 100%;
+    transform: rotate(90deg) scale(1.8);
+  `}
 `;
 
 export default Line;
