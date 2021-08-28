@@ -4,6 +4,7 @@ import logo from "../assets/logo.svg";
 import Link from "./styledElements/Link";
 import Button from "./styledElements/Buttons";
 import MobileMenuToggle from "./MobileMenuToggle";
+import MobileMenu from "./MobileMenu";
 import { maxWidthLg, sectionSpacingSm } from "../abstracts/Mixins";
 import Responsive from "../abstracts/Responsive";
 
@@ -66,6 +67,7 @@ const Navbar = () => {
         </div>
         <MobileMenuToggle isActive={isActive} setIsActive={setIsActive} />
       </Container>
+      <MobileMenu isActive={isActive} />
     </nav>
   );
 };

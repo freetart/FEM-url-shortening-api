@@ -18,6 +18,20 @@ const Link = styled.a`
       }
     `}
 
+  ${({ mobile }) =>
+    mobile &&
+    css`
+      ${headingStyles}
+      padding: 0.5rem 0;
+      font-size: 1.8rem;
+      color: var(--white);
+
+      &:hover,
+      &:focus {
+        color: var(--teal);
+      }
+    `}
+
   ${({ footer }) =>
     footer &&
     css`

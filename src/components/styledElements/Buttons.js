@@ -25,6 +25,15 @@ const Button = styled.a`
       border-radius: var(--btnRadius);
     `}
 
+  ${({ primarySmMobile }) =>
+    primarySmMobile &&
+    css`
+      font-size: 1.6rem;
+      border-radius: var(--btnRadius);
+      width: 100%;
+      text-align: center;
+    `}
+
   ${({ primaryLg }) =>
     primaryLg &&
     css`
