@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useForm } from "react-hook-form";
 import styled from "styled-components";
 import { maxWidthLg, headingStyles, textStyles } from "../abstracts/Mixins";
@@ -88,16 +87,12 @@ const Form = styled.form`
   }
 `;
 
-const ShortenLink = () => {
+const ShortenLink = ({ handleUserInput, onSubmit }) => {
   const {
     handleSubmit,
     register,
     formState: { errors },
   } = useForm();
-  const onSubmit = (values) => console.log(values);
-  const [userInput, setUserInput] = useState("");
-
-  console.log(userInput);
 
   return (
     <Article>
@@ -110,7 +105,7 @@ const ShortenLink = () => {
           type="text"
           placeholder="Shorten a link here..."
           autoComplete="off"
-          onChange={(e) => setUserInput(e.target.value)}
+          onChange={handleUserInput}
         />
         {errors.link && (
           <small className="shorten-link-message">

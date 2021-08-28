@@ -28,12 +28,12 @@ const Container = styled.article`
   }
 `;
 
-const Result = ({ userInput, generatedLink }) => {
+const Result = () => {
   return (
     <Container>
-      <Paragraph result>{userInput}</Paragraph>
+      <Paragraph result></Paragraph>
       <div className="result-right">
-        <Paragraph resultLink>{generatedLink}</Paragraph>
+        <Paragraph resultLink></Paragraph>
         <Button secondarySm>Copy</Button>
       </div>
     </Container>

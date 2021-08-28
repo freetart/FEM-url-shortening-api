@@ -18,10 +18,7 @@ const Results = () => {
   return (
     <Section>
       <Container>
-        <Result
-          userInput="https://www.habibdev96.tech"
-          generatedLink="https://rel.ink/k29d7d"
-        />
+        <Result />
       </Container>
     </Section>
   );
