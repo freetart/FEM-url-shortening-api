@@ -30,18 +30,23 @@ const Hero = () => {
   return (
     <header>
       <Container>
-        <div className="hero-info">
-          <MainHeading>More than just shorter links</MainHeading>
-          <Paragraph hero>
+        <div>
+          <MainHeading data-aos="fade-up">
+            More than just shorter links
+          </MainHeading>
+          <Paragraph hero data-aos="fade-up" data-aos-delay="100">
             Build your brand’s recognition and get detailed insights on how your
             links are performing.
           </Paragraph>
-          <Button primaryLg>Get Started</Button>
+          <div data-aos="fade-up" data-aos-delay="200">
+            <Button primaryLg>Get Started</Button>
+          </div>
         </div>
         <img
           src={heroImg}
           alt="illustration of person working"
           className="hero-img"
+          data-aos="fade-down"
         />
       </Container>
     </header>

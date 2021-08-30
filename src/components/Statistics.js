@@ -41,7 +41,7 @@ const Container = styled.div`
 const Statistics = () => {
   return (
     <Section>
-      <Container>
+      <Container data-aos="fade-up">
         <div className="section-title">
           <SectionHeading dark>Advanced Statistics</SectionHeading>
           <Paragraph section>

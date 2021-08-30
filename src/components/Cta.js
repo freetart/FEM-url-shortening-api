@@ -20,7 +20,7 @@ const Container = styled.div`
 const Cta = () => {
   return (
     <Section>
-      <Container>
+      <Container data-aos="fade-in" data-aos-delay="200">
         <SectionHeading light>Boost your links today</SectionHeading>
         <Button primaryLg>Get Started</Button>
       </Container>
