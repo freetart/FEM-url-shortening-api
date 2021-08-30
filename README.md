@@ -7,6 +7,7 @@ site: https://fem-url-shortening-api-challenge.netlify.app/
 
 #### Features
 - mobile menu & mobile menu toggle
+- input validation
 - responsive design
 - animated content on scroll
 
