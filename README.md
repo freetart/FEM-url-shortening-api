@@ -15,6 +15,6 @@ site: https://fem-url-shortening-api-challenge.netlify.app/
 - react
 - styled components
 
-#### Dependencies
+#### Libraries
 - react icons
 - react-hook-form
